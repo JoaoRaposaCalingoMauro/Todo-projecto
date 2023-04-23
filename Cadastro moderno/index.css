@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-branca : #FFFFFF;
+    --color-preta:#1c1c1c;
+    --color-amarelo1:#ffce51;
+    --color-amarelo2:#eec04c;
+    --color-laranja1:#ff7253;
+    --color-laranja2:#ec7054;
+    --color-vermelho1:#fd5754;
+    --color-vermelho2:#ee5a57;
+    --color-lilas:#2b344b;
+    --color-grey1:#6f7e8a;
+}
+body{
+    background: linear-gradient(to left, var(--color-amarelo1),var(--color-laranja1),var(--color-vermelho1));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-lilas);
+}
+#centro main{
+    background-color: var(--color-preta);
+    border: 2px solid dodgerblue;
+    transition: 2s;
+    padding: 2rem;
+    color: var(--color-branca);
+    border-radius: 20px;
+    width: 30vw;
+}
+#centro main h2{
+    font-size: 23pt;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    width: 50%;
+}
+#centro main form label{
+    font-size: 12pt;
+    font-weight: lighter;
+    margin: 2% 0;
+}
+#centro main form .userBox{
+    display: flex;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid var(--color-lilas);
+    border-radius: 20px;
+    justify-content: center;
+    background-color: var(--color-lilas);
+}
+#centro main form .userBox img{
+    width: auto;
+    height: 20px;
+}
+#centro main form .userBox input{
+    height: 4vh;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-lilas);
+    padding-left: 10px;
+    width: 90%;
+    color: var(--color-branca);
+}
+#centro main form .userBox input::placeholder{
+    font-size: 16px;
+    color: var(--color-grey1);
+}
+#centro main form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--color-branca);
+    transition: 2s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-orange : #F05817;
+    --color-black:#000;
+    --color-grey : rgb(54, 53, 53);
+    --color-grey2:rgba(0, 0, 0, .3);
+    --color-lilas2 : #d1add4;
+    --color-branco:#fff;
+    --color-lilas : #933c9b;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: var(--color-lilas2);
+    font-size: 12pt;
+}
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+main #cadastro{
+    background-color: #F05817;
+    padding: 2rem;
+    color: var(--color-branco);
+    width: 30%;
+    border-radius: 10px;
+}
+main #cadastro form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main #cadastro form input{
+    height: 4vh;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+main #cadastro form fieldset{
+    padding: 1rem;
+    border-radius: 10px;
+}
+main #cadastro form fieldset .genero{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main #cadastro form button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 5vh;
+    color: var(--color-branco);
+    font-size: 12pt;
+    background-color: var(--color-lilas);
+    transition: 700ms ease;
+}
+main #cadastro form button:hover{
+    background: linear-gradient(to left,orangered,orange,yellow);
+    box-shadow: 0 0 3px grey;
+    color: var(--color-branco);
+    background-size: 500% 100%;
+    width: 100%;
+    animation: line 0.5s infinite alternate;
+    
+}
+@keyframes line {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}

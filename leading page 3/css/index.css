@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-orange : #F05817;
+    --color-black : rgb(54, 53, 53);
+    --color-grey : #d1add4;
+}
+body{
+    background-color: var(--color-grey) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#principal{
+    display: grid;
+    place-items:center;
+    height: 100vh;
+}
+#principal header{
+    width: 70%;
+    height: 80%;
+    padding: 5rem;
+    background-color: var(--color-orange);
+    border-radius: 2rem;
+    box-shadow: 0px 5px 12px rgb(80, 80, 80);
+}
+#principal header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#principal header nav ul{
+    display: flex;
+    gap: 2rem;
+}
+#principal header nav ul li{
+    list-style: none;
+}
+#principal header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+}
+#principal header nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+#principal header nav ul li a:hover::after{
+    width: 100%;
+}
+#principal header #cont{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+#principal header #cont #cima{
+    margin-top: -100px;
+    gap: 10px;
+}
+#principal header #cont #cima h1{
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+#principal header #cont #cima h3{
+    font-weight: lighter;
+}
+#principal header #cont span{
+    color: var(--color-grey);
+ }
+#principal header #cont img{
+    width: 30vw;
+}

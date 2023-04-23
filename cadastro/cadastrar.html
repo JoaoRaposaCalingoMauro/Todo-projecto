@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="css/css.css">
+    
+</head>
+<body>
+    <main>
+        <div id="cadastro"> 
+            <form action="">
+                <h1>Cadastre-se</h1>
+                <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome">
+                <input type="text" name="sobrenome" id="sobrenome" class="inputUser" placeholder="Sobrenome">
+                <fieldset>
+                    <legend>Genero</legend>
+                    <div class="genero">
+                        <input type="radio" name="sexo" id="masculino" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" name="sexo" id="femenino" value="Femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                </fieldset>
+                <input type="email" name="email" id="email" class="inputUser" placeholder="E-mail">
+                <input type="password" name="senha" id="senha" class="inputUser" placeholder="Criar uma Senha">
+                <input type="password" name="confirme" id="confirme" class="inputUser" placeholder="Confirme a sua senha">
+                <button id="btn">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-azul : #8D2763;
+    --color-black : #000;
+    --color-grey : #d1add4;
+    --color-grey2: #d4dde1;
+}
+body{
+    background-color: var(--color-grey2) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#principal{
+    display: grid;
+    place-items:center;
+    height: 100vh;
+}
+#principal header{
+    width: 70%;
+    height: 80%;
+    padding: 3rem;
+    background-color: var(--color-azul);
+    border-radius: 2rem;
+}
+
+#principal header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#principal header nav h3{
+    color: #fff;
+}
+#principal header nav ul{
+    display: flex;
+    gap: 2rem;
+}
+#principal header nav ul li{
+    list-style: none;
+}
+
+#principal header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+}
+#principal header nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 700ms ease-in-out;
+}
+#principal header nav ul li a:hover::after{
+    width: 100%;
+}
+#principal header #cont{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 50px;
+
+}
+#principal header #cont #cima{
+    margin-top: -100px;
+    gap: 10px;
+}
+#principal header #cont #cima h1{
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#principal header #cont #cima h3{
+    color: #fff;
+    font-weight: lighter;
+}
+#principal header #cont #cima button{
+    padding: 10px 15px ;
+    margin-top: 50px;
+    width: 50%;
+    background-color: var(--color-azul);
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 700ms ease;
+}
+#principal header #cont #cima button:hover{
+    background-color: #fff;
+    color: var(--color-azul);
+}
+#principal header #cont span{
+    color: var(--color-black);
+ }
+#principal header #cont img{
+    width: 30vw;
+}
